@@ -35,11 +35,12 @@
 			</div>
 		</nav>
 	</header>
-	
+
 	<div id="projectContainer" class="row">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<h2 id="resumeBuilder">Resume Builder
+				<h2 id="resumeBuilder">
+					Resume Builder
 					<button type="button" class="btn btn-primary">
 						<a href="https://github.com/marekkulesza/ResumeBuilder/blob/main/Resume_Builder.py">Link to
 							Github</a>
@@ -66,7 +67,6 @@
 					knew a lot about html but I intuitively knew this from
 					past experiences in saving files from websites.
 				</p>
-
 			</div>
 			<div class="col-12 col-lg-6">
 				<img id="resumeBuilderFlowChart" src="images/resumeBuilderFlowChart.png"
@@ -74,13 +74,14 @@
 			</div>
 		</div>
 
-		<br/>
-		<br/>
-		<br/>
+		<br />
+		<br />
+		<br />
 
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<h2 id="virtualPiano">Virtual Piano
+				<h2 id="virtualPiano">
+					Virtual Piano
 					<button type="button" class="btn btn-primary">
 						<a href="https://github.com/marekkulesza/keyboardProject">Link to Github</a>
 					</button>
@@ -96,20 +97,20 @@
 					statements were really tricky here and I learned about
 					z-axis which is just layering
 				</p>
-
 			</div>
 			<div class="col-12 col-lg-6">
 				<img id="virtualPianoImg" src="images/virtualPiano.PNG" alt="A very basic Virtual Piano" />
 			</div>
 		</div>
 
-		<br/>
-		<br/>
-		<br/>
+		<br />
+		<br />
+		<br />
 
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<h2 id="thisWebsite">This Website
+				<h2 id="thisWebsite">
+					This Website
 					<button type="button" class="btn btn-primary">
 						Just press F12
 					</button>
@@ -142,16 +143,58 @@
 					help you along the way because flex stuff doesn't seem
 					to flex the way you want it to.
 				</p>
+				<p>
+					Alright this is the actual serious part. I used AWS's
+					front-end developement software called Amplify. Now this
+					is a crazy awesome service becuase you get scaleable web
+					hosting with tons of cool features like being able to
+					see what your app will look like on different devices
+					(phones and such), but I ended up using Heroku because
+					it was basically the same with a few less features and
+					it was free but heres a 6 hour story I had with AWS.
+				</p>
+				<p>
+					AWS's CLI is very difficult for not-smart people to use.
+					The syntax is very simple once you get it. Having to
+					find your app-id is pretty difficult since it's not
+					exactly there in your face sayign "HEY APP-ID = this
+					value" what I noticed was that in your app's default
+					domain is the app id. eg. main."app-id".something.com.
+					This took me 4 hours to figure out. I'm not-smart.
+				</p>
+
+				<p>
+					Now you might be asking, why do you want your app-id.
+					Well to delete your app, you need to use the AWS CLI,
+					and there isn't a nice little button anywhere to just
+					delete your app, because why have that? So when the
+					advice is just: delete-app --app-id (value) this means
+					nothing to someone who isn't too smart and who now has
+					to spend 4 hours looking for their app-id.
+				</p>
+
+				<p>
+					After you properly get the AWS CLI installed and figure
+					that you have to write AWS delete-app --app-id (value),
+					then get your auth-key, then get your auth-key password,
+					then get your location server, like us-east-2, THEN
+					finally you can delete it.
+				</p>
+				<p>
+					Heroku has that little nice delete pipeline button in
+					the settings. Thank you Heroku.
+				</p>
 			</div>
 		</div>
 
-		<br/>
-		<br/>
-		<br/>
+		<br />
+		<br />
+		<br />
 
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<h2 id="faceDetector">Face Detector in OpenCV
+				<h2 id="faceDetector">
+					Face Detector in OpenCV
 					<button type="button" class="btn btn-primary">
 						<a href="https://github.com/marekkulesza/FaceDetection/">Link to Github</a>
 					</button>
@@ -213,78 +256,83 @@
 			</div>
 		</div>
 
-		<br/>
-		<br/>
-		<br/>
+		<br />
+		<br />
+		<br />
 
 		<div class="row">
 			<div class="row">
 				<div class="col-12 col-lg-6">
-					<h2 id="customObject"> Custom Object Identifier in OpenCV
+					<h2 id="customObject">
+						Custom Object Identifier in OpenCV
 						<button type="button" class="btn btn-primary">
 							<a href="https://github.com/marekkulesza/customLedDetector">Link to Github</a>
 						</button>
 					</h2>
 					<p>
-						So custom object detection is pretty cool but probably
-						not something you want to be doing. There's a lot to say
-						about when and how you should integrate ai. A good
-						example being something that has a low cost to failure
-						and something extremely repetitive that no one likes
-						doing. So naturally we just put them in everything.
+						So custom object detection is pretty cool but
+						probably not something you want to be doing. There's
+						a lot to say about when and how you should integrate
+						ai. A good example being something that has a low
+						cost to failure and something extremely repetitive
+						that no one likes doing. So naturally we just put
+						them in everything.
 					</p>
 					<p>
-						The main thing to learn at this time was more data is
-						better. Ignore the whole over-training part, for
+						The main thing to learn at this time was more data
+						is better. Ignore the whole over-training part, for
 						practical purpose's I've never over-trained my own
-						projects I believe, maybe data scientists will say ohh
-						this is very easy to over-train, ad they're probably
-						right but under-training is a bigger issue for someone
-						working with a few hundred photos and a 1kb xml file.
+						projects I believe, maybe data scientists will say
+						ohh this is very easy to over-train, ad they're
+						probably right but under-training is a bigger issue
+						for someone working with a few hundred photos and a
+						1kb xml file.
 					</p>
 					<p>
 						Just creating a simple object detector that looks at
-						LED's on a breadboard took me days. The fine tunning is
-						insane because you'll be pointing your camera at your
-						speakers and it will tell you "I see an LED" so you have
-						to spend another 20mins creating a new XML file and at
-						the end of what seemed to be a 2 day veture because a 2
-						month project that didn't really work unless I had a
-						super stable envoirnment.
+						LED's on a breadboard took me days. The fine tunning
+						is insane because you'll be pointing your camera at
+						your speakers and it will tell you "I see an LED" so
+						you have to spend another 20mins creating a new XML
+						file and at the end of what seemed to be a 2 day
+						veture because a 2 month project that didn't really
+						work unless I had a super stable envoirnment.
 					</p>
 				</div>
 				<div class="col-12 col-lg-6">
-					<img id="customDetectorImg" src="images/customDetection.png"/>
+					<img id="customDetectorImg" src="images/customDetection.png" />
 				</div>
 			</div>
 		</div>
 
-		<br/>
-		<br/>
-		<br/>
+		<br />
+		<br />
+		<br />
 
 		<div class="row">
 			<div class="row">
 				<div class="col-12 col-lg-6">
-					<h2 id="guiProgram">GUI for programs with QT
+					<h2 id="guiProgram">
+						GUI for programs with QT
 						<button type="button" class="btn btn-primary">
 							<a href="https://github.com/marekkulesza/Resume-Builder-GUI">Link to Github</a>
 						</button>
 					</h2>
 					<p>
 						This turned out better than you'd think, with QT I
-						actually didn't have to do much coding but learn what
-						each thing does and accidentally I learned you can
-						import entire python files. So now I have a python file
-						for the UI and a python file for the code.
+						actually didn't have to do much coding but learn
+						what each thing does and accidentally I learned you
+						can import entire python files. So now I have a
+						python file for the UI and a python file for the
+						code.
 					</p>
 					<p>
-						So I grabbed my resume builder program and slapped a GUI
-						on it and it turned out pretty good. Having the buttons
-						connect to the methods is pretty satisfying. It's pretty
-						intuitive. Exporting it to become a standalone
-						application didn't work out because one dependancy
-						wasn't exporting properly.
+						So I grabbed my resume builder program and slapped a
+						GUI on it and it turned out pretty good. Having the
+						buttons connect to the methods is pretty satisfying.
+						It's pretty intuitive. Exporting it to become a
+						standalone application didn't work out because one
+						dependancy wasn't exporting properly.
 					</p>
 				</div>
 				<div class="col-12 col-lg-6">
@@ -293,10 +341,9 @@
 				</div>
 			</div>
 
-			<br/>
-			<br/>
-			<br/>
-			
+			<br />
+			<br />
+			<br />
 		</div>
 	</div>
 
