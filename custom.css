@@ -63,7 +63,7 @@ a:not(.btn) {
 #virtualPianoImg,
 #resumeBuilderFlowChart {
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 95%;
 	height: auto;
 	width: auto;
 }
@@ -104,11 +104,20 @@ p.clear {
 	padding-left: 10px;
 }
 
+
 #projectContainer {
-	padding-top: 2em;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-top: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	display: flex;
+	/*flex-direction: column-reverse;*/
+	flex-direction: column;
 }
+
+.custom-switch {
+	padding-top: 2em;
+	padding-left: 5em;
+	padding-right: 2em;}
 
 .mainContainer{
 	padding-top: 2em;

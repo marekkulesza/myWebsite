@@ -36,7 +36,15 @@
 		</nav>
 	</header>
 
+	<div class="row">
+		<div class="custom-control custom-switch">
+			<input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+			<label class="custom-control-label" for="customSwitch1">Oldest First</label>
+		</div>
+	</div>
+
 	<div id="projectContainer" class="row">
+
 		<div class="row">
 			<div class="col-12 col-lg-6">
 				<h2 id="resumeBuilder">
@@ -88,7 +96,7 @@
 				</h2>
 				<p>
 					This was a project based around two main things. #1 this
-					project was for hyperskills.org's web development 
+					project was for hyperskills.org's web development
 					program. #2 I used the skills I learned at Mohawk to
 					make myself a little Virtual Piano.
 				</p>
@@ -107,89 +115,7 @@
 		<br />
 		<br />
 
-		<div class="row">
-			<div class="col-12 col-lg-6">
-				<h2 id="thisWebsite">
-					This Website
-					<button type="button" class="btn btn-primary">
-						Just press F12
-					</button>
-				</h2>
-				<p>
-					So, this was extremely hard, divs are hard and if I had
-					to say anything it makes sense... once you get the hang
-					of it. I've made so many mistakes, like so many, I'm
-					afraid to check my spelling because the code is even
-					worse. But HTML just works... it just keeps on chugging.
-				</p>
-				<p>
-					Balance is the most important part about css. I'm not
-					worried about pixel perfection, I'm not even worried
-					about my spelling or grammar because there's something
-					more important here. Getting those Divs right.
-				</p>
-				<p>
-					There's a lot I learned here, you can have 2 custom CSS
-					files. Javascript at the end before the closing body
-					tag. Being able to choose different screen sizes when
-					you check your elements that you did wrong. Those
-					columns and rows at the first page, took me hours. And
-					the website that I used to get this awesome theme was
-					from Bootswatch (Darkly). Pro tip, if you're ever going
-					to use a new piece of tech there's typically a "Getting
-					Started" button on the front so you don't have to look
-					at terrible youtube videos that are like 4 years old.
-					Also having great friends (Petar and McFarland) who can
-					help you along the way because flex stuff doesn't seem
-					to flex the way you want it to.
-				</p>
-				<p>
-					Alright this is the actual serious part. I used AWS's
-					front-end development software called Amplify. Now this
-					is a crazy awesome service because you get scalable web
-					hosting with tons of cool features like being able to
-					see what your app will look like on different devices
-					(phones and such), but I ended up using Heroku because
-					it was basically the same with a few less features and
-					it was free but here's a 6 hour story I had with AWS.
-				</p>
-				<p>
-					AWS's CLI is very difficult for not-smart people to use.
-					The syntax is very simple once you get it. Having to
-					find your app-id is pretty difficult since it's not
-					exactly there in your face saying "HEY APP-ID = this
-					value" what I noticed was that in your app's default
-					domain is the app id. eg. main."app-id".something.com.
-					This took me 4 hours to figure out. I'm not-smart.
-				</p>
 
-				<p>
-					Now you might be asking, why do you want your app-id.
-					Well to delete your app, you need to use the AWS CLI,
-					and there isn't a nice little button anywhere to just
-					delete your app, because why have that? So when the
-					advice is just: delete-app --app-id (value) this means
-					nothing to someone who isn't too smart and who now has
-					to spend 4 hours looking for their app-id.
-				</p>
-
-				<p>
-					After you properly get the AWS CLI installed and figure
-					that you have to write AWS delete-app --app-id (value),
-					then get your auth-key, then get your auth-key password,
-					then get your location server, like us-east-2, THEN
-					finally you can delete it.
-				</p>
-				<p>
-					Heroku has that little nice delete pipeline button in
-					the settings. Thank you Heroku.
-				</p>
-			</div>
-		</div>
-
-		<br />
-		<br />
-		<br />
 
 		<div class="row">
 			<div class="col-12 col-lg-6">
@@ -309,7 +235,7 @@
 		<br />
 		<br />
 
-		<div class="row">
+		
 			<div class="row">
 				<div class="col-12 col-lg-6">
 					<h2 id="guiProgram">
@@ -340,12 +266,98 @@
 						alt="A basic program that has a user interface" />
 				</div>
 			</div>
+		
+			<br />
+			<br />
+			<br />
+
+			<div class="row">
+				<div class="col-12">
+					<h2 id="thisWebsite">
+						This Website
+						<button type="button" class="btn btn-primary">
+							Just press F12
+						</button>
+					</h2>
+					<p>
+						So, this was extremely hard, divs are hard and if I had
+						to say anything it makes sense... once you get the hang
+						of it. I've made so many mistakes, like so many, I'm
+						afraid to check my spelling because the code is even
+						worse. But HTML just works... it just keeps on chugging.
+					</p>
+					<p>
+						Balance is the most important part about css. I'm not
+						worried about pixel perfection, I'm not even worried
+						about my spelling or grammar because there's something
+						more important here. Getting those Divs right.
+					</p>
+					<p>
+						There's a lot I learned here, you can have 2 custom CSS
+						files. Javascript at the end before the closing body
+						tag. Being able to choose different screen sizes when
+						you check your elements that you did wrong. Those
+						columns and rows at the first page, took me hours. And
+						the website that I used to get this awesome theme was
+						from Bootswatch (Darkly). Pro tip, if you're ever going
+						to use a new piece of tech there's typically a "Getting
+						Started" button on the front so you don't have to look
+						at terrible youtube videos that are like 4 years old.
+						Also having great friends (Petar and McFarland) who can
+						help you along the way because flex stuff doesn't seem
+						to flex the way you want it to.
+					</p>
+					<p>
+						Alright this is the actual serious part. I used AWS's
+						front-end development software called Amplify. Now this
+						is a crazy awesome service because you get scalable web
+						hosting with tons of cool features like being able to
+						see what your app will look like on different devices
+						(phones and such), but I ended up using Heroku because
+						it was basically the same with a few less features and
+						it was free but here's a 6 hour story I had with AWS.
+					</p>
+					<p>
+						AWS's CLI is very difficult for not-smart people to use.
+						The syntax is very simple once you get it. Having to
+						find your app-id is pretty difficult since it's not
+						exactly there in your face saying "HEY APP-ID = this
+						value" what I noticed was that in your app's default
+						domain is the app id. eg. main."app-id".something.com.
+						This took me 4 hours to figure out. I'm not-smart.
+					</p>
+
+					<p>
+						Now you might be asking, why do you want your app-id.
+						Well to delete your app, you need to use the AWS CLI,
+						and there isn't a nice little button anywhere to just
+						delete your app, because why have that? So when the
+						advice is just: delete-app --app-id (value) this means
+						nothing to someone who isn't too smart and who now has
+						to spend 4 hours looking for their app-id.
+					</p>
+
+					<p>
+						After you properly get the AWS CLI installed and figure
+						that you have to write AWS delete-app --app-id (value),
+						then get your auth-key, then get your auth-key password,
+						then get your location server, like us-east-2, THEN
+						finally you can delete it.
+					</p>
+					<p>
+						Heroku has that little nice delete pipeline button in
+						the settings. Thank you Heroku.
+					</p>
+				</div>
+		
 
 			<br />
 			<br />
 			<br />
 		</div>
 	</div>
+
+	<script src="projects.js"></script> <!-- This is for the custom toggle button to reverse the order of the main container-->
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
